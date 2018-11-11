@@ -1,0 +1,33 @@
+@import '../../global.scss';
+
+.header-main-wrap {
+   background-color: $dark-blue;
+   color: white;
+   padding: 2em 0;
+   display: flex;
+   justify-content: center;
+}
+
+.header-ul {
+    display: flex;
+    width: 25em;
+    padding:0;
+    justify-content: space-between;
+    margin: 0;
+    list-style-type: none;
+    font-size: 1.25em;
+    font-family: $font1;
+    flex-direction: column;
+    text-align: center;
+
+    @media (min-width: 600px) {
+        flex-direction: row;
+    }
+
+    li {
+        cursor: pointer;
+        &:hover {
+            color: $light-blue;
+        }
+    }
+}
