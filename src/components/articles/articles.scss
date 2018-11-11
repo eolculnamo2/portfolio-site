@@ -1,0 +1,21 @@
+@import '../../global.scss';
+
+.articles-page-main-wrap {
+    font-family: $font1;
+    padding: 2em;
+}
+
+.article-main-heading {
+    text-align: center;
+    background-color: $faded-red;
+    width: 10em;
+    margin: auto;
+    border-radius: 3px;
+    padding: .5em 1em;
+    margin-bottom: 1em;
+    color: white;
+
+    @media (min-width: 800px) {
+        width: 20em;
+    }
+}

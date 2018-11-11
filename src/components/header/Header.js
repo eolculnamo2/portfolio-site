@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Link, Route, withRouter, Redirect, Switch } from 'react-router-dom'
 import './header.scss';
 
 class Header extends React.Component {
@@ -6,9 +7,9 @@ class Header extends React.Component {
         return(
             <div className="header-main-wrap">
                 <ul className="header-ul">
-                    <li>Articles</li>
+                    <Link to='/'><li>Home</li></Link>
+                    <Link to='/articles'><li>Articles</li></Link>
                     <li>Projects</li>
-                    <li>Resume</li>
                     <li>About Me</li>
                 </ul>
             </div>

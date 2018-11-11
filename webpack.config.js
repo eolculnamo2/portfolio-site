@@ -40,12 +40,12 @@ const browserConfig = {
       },
     plugins: [
               new CleanWebpackPlugin(['assets/dist'], {exclude: 'sitemap.xml'}),
-            //   new MiniCssExtractPlugin({
-            //     // Options similar to the same options in webpackOptions.output
-            //     // both options are optional
-            //     filename: "style.css",
-            //     chunkFilename: "[name].css"
-            //   })
+              new MiniCssExtractPlugin({
+                // Options similar to the same options in webpackOptions.output
+                // both options are optional
+                filename: "style.css",
+                chunkFilename: "[name].css"
+              })
             ],
     module: {
         rules: [
@@ -63,18 +63,18 @@ const browserConfig = {
                 loader: 'url-loader'
                 
             },
-            // {
-            //     test: /\.(sa|sc|c)ss$/,
-            //     use: [
-            //         MiniCssExtractPlugin.loader,
-            //         'css-loader',
-            //         'sass-loader',
-            //       ],
-            //  },
             {
-                test: /\.scss$/,
-                loader: 'style-loader!css-loader!sass-loader'
-            }
+                test: /\.(sa|sc|c)ss$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'sass-loader',
+                  ],
+             },
+            // {
+            //     test: /\.scss$/,
+            //     loader: 'style-loader!css-loader!sass-loader'
+            // }
         ]
     }
 }
@@ -109,4 +109,4 @@ const serverConfig = {
     }
   };
 
-module.exports = browserConfig //, serverConfig];
+module.exports = [browserConfig , serverConfig];

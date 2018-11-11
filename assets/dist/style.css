@@ -1,0 +1,141 @@
+body {
+  font-size: .8rem;
+  margin: 0; }
+  @media (min-width: 600px) {
+    body {
+      font-size: 1rem; } }
+
+a {
+  text-decoration: inherit;
+  color: inherit; }
+
+.main-body-wrap {
+  padding: 2em;
+  font-family: "Trebuchet MS", Helvetica, sans-serif; }
+
+.body-info-box-wrap {
+  width: 100%;
+  padding-top: 4em;
+  display: flex;
+  justify-content: center; }
+
+.body-info-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; }
+
+.info-text {
+  margin: 0;
+  padding: .15em 0;
+  font-weight: 500; }
+
+.skills-box {
+  background-color: #CF6766;
+  color: white;
+  padding: .25em 0;
+  border-radius: 3px;
+  width: 11em; }
+
+.empty-tags-display {
+  text-align: center;
+  margin: 1em 0;
+  font-size: 3em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500; }
+
+.min-height-home {
+  min-height: 80vh; }
+
+.article-preview-wrap {
+  border-top: 1px solid #999;
+  padding: 3em 0;
+  margin: auto; }
+  @media (min-width: 800px) {
+    .article-preview-wrap {
+      width: 70%;
+      padding: 3em 5em; } }
+
+.article-preview-section {
+  padding: 1em;
+  border-radius: 3px; }
+  .article-preview-section:hover {
+    background: #8EAEBD;
+    color: white;
+    cursor: pointer; }
+
+.article-preview-h3 {
+  margin: 0;
+  color: #30415D; }
+
+.article-preview-p {
+  margin-top: .4em; }
+
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 1s; }
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+a {
+  text-decoration: inherit;
+  color: inherit; }
+
+a {
+  text-decoration: inherit;
+  color: inherit; }
+
+.header-main-wrap {
+  background-color: #031424;
+  color: white;
+  padding: 2em 0;
+  display: flex;
+  justify-content: center; }
+
+.header-ul {
+  display: flex;
+  width: 25em;
+  padding: 0;
+  justify-content: space-between;
+  margin: 0;
+  list-style-type: none;
+  font-size: 1.25em;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  flex-direction: column;
+  text-align: center; }
+  @media (min-width: 600px) {
+    .header-ul {
+      flex-direction: row; } }
+  .header-ul li {
+    cursor: pointer; }
+    .header-ul li:hover {
+      color: #8EAEBD; }
+
+a {
+  text-decoration: inherit;
+  color: inherit; }
+
+.articles-page-main-wrap {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  padding: 2em; }
+
+.article-main-heading {
+  text-align: center;
+  background-color: #CF6766;
+  width: 10em;
+  margin: auto;
+  border-radius: 3px;
+  padding: .5em 1em;
+  margin-bottom: 1em;
+  color: white; }
+  @media (min-width: 800px) {
+    .article-main-heading {
+      width: 20em; } }
+
