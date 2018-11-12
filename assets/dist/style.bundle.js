@@ -44,6 +44,17 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 
 /***/ }),
 
+/***/ "./src/components/projects/projects.scss":
+/*!***********************************************!*\
+  !*** ./src/components/projects/projects.scss ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/projects/projects.scss?");
+
+/***/ }),
+
 /***/ "./src/global.scss":
 /*!*************************!*\
   !*** ./src/global.scss ***!

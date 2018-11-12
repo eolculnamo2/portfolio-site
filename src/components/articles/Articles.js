@@ -19,7 +19,8 @@ class Articles extends React.Component {
                     title: "Webpack's SplitChunksPlugin: Basic Setup",
                     preview: "Webpack's splitChunksPlugin does wonders for your JavaScript's performance. The best part is that setting up splitChunksPlugin is not at all difficult. Click here for a quick guide on getting started."
                 }
-            ]
+            ],
+            allArticles: ["Article Example", "Article Example:  Lorem ipsum ist blah blah", "Articles","Article Example", "Article Example:  Lorem ipsum ist blah blah", "Articles"]
         }
     }
     render() {
@@ -30,6 +31,14 @@ class Articles extends React.Component {
                     {this.state.featuredArticles.map((x,i) => {
                         return( 
                             <ArticlePreview title={x.title} text={x.preview} />
+                        )
+                    })}
+                </div>
+
+                <div className="article-preview-wrap">
+                    {this.state.allArticles.map((x,i) => {
+                        return( 
+                            <h4 className="article-list-item">{x}</h4>
                         )
                     })}
                 </div>

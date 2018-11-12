@@ -19,3 +19,17 @@
         width: 20em;
     }
 }
+
+.article-list-item {
+    color: $medium-blue;
+    cursor: pointer;
+    @media (min-width: 1000px) {
+        width: 49%;
+        display: inline-block;
+    }
+
+    &:hover {
+        color: $dark-blue;
+        text-decoration: underline;
+    }
+}
