@@ -19,9 +19,6 @@ const ProjectCard = props => {
                     <button>View Project</button>
                 </a>
             </div>
-            
-            
-            
         </div>
     )
 }

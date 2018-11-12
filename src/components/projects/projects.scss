@@ -26,11 +26,7 @@
     border-radius: 3px;
 
     &:hover {
-        background: $faded-red;
-        color: white;
-        h3 {
-            color: white;
-        }
+        box-shadow: 0px 5px 5px 5px #dadada;
     }
 
     h3 {
