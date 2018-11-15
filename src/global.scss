@@ -9,3 +9,22 @@ a {
     text-decoration: inherit;
     color: inherit;
 }
+
+.main-heading {
+    text-align: center;
+    background-color: $faded-red;
+    width: 10em;
+    margin: auto;
+    border-radius: 3px;
+    padding: .5em 1em;
+    margin-bottom: 1em;
+    color: white;
+
+    &--gray {
+        background-color: #999999;
+    }
+
+    @media (min-width: 800px) {
+        width: 20em;
+    }
+}

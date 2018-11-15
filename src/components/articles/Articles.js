@@ -26,7 +26,7 @@ class Articles extends React.Component {
     render() {
         return(
             <div className="articles-page-main-wrap">
-                <h1 className="article-main-heading">{"<Articles />"}</h1>
+                <h1 className="main-heading">{"<Articles />"}</h1>
                 <div className="article-preview-wrap">
                     {this.state.featuredArticles.map((x,i) => {
                         return( 

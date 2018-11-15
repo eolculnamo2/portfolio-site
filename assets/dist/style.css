@@ -9,6 +9,21 @@ a {
   text-decoration: inherit;
   color: inherit; }
 
+.main-heading {
+  text-align: center;
+  background-color: #CF6766;
+  width: 10em;
+  margin: auto;
+  border-radius: 3px;
+  padding: .5em 1em;
+  margin-bottom: 1em;
+  color: white; }
+  .main-heading--gray {
+    background-color: #999999; }
+  @media (min-width: 800px) {
+    .main-heading {
+      width: 20em; } }
+
 .main-body-wrap {
   padding: 2em;
   font-family: "Trebuchet MS", Helvetica, sans-serif; }
@@ -88,9 +103,39 @@ a {
   text-decoration: inherit;
   color: inherit; }
 
+.main-heading {
+  text-align: center;
+  background-color: #CF6766;
+  width: 10em;
+  margin: auto;
+  border-radius: 3px;
+  padding: .5em 1em;
+  margin-bottom: 1em;
+  color: white; }
+  .main-heading--gray {
+    background-color: #999999; }
+  @media (min-width: 800px) {
+    .main-heading {
+      width: 20em; } }
+
 a {
   text-decoration: inherit;
   color: inherit; }
+
+.main-heading {
+  text-align: center;
+  background-color: #CF6766;
+  width: 10em;
+  margin: auto;
+  border-radius: 3px;
+  padding: .5em 1em;
+  margin-bottom: 1em;
+  color: white; }
+  .main-heading--gray {
+    background-color: #999999; }
+  @media (min-width: 800px) {
+    .main-heading {
+      width: 20em; } }
 
 .header-main-wrap {
   background-color: #031424;
@@ -122,11 +167,7 @@ a {
   text-decoration: inherit;
   color: inherit; }
 
-.articles-page-main-wrap {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  padding: 2em; }
-
-.article-main-heading {
+.main-heading {
   text-align: center;
   background-color: #CF6766;
   width: 10em;
@@ -135,9 +176,15 @@ a {
   padding: .5em 1em;
   margin-bottom: 1em;
   color: white; }
+  .main-heading--gray {
+    background-color: #999999; }
   @media (min-width: 800px) {
-    .article-main-heading {
+    .main-heading {
       width: 20em; } }
+
+.articles-page-main-wrap {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  padding: 2em; }
 
 .article-list-item {
   color: #30415D;
@@ -154,6 +201,21 @@ a {
   text-decoration: inherit;
   color: inherit; }
 
+.main-heading {
+  text-align: center;
+  background-color: #CF6766;
+  width: 10em;
+  margin: auto;
+  border-radius: 3px;
+  padding: .5em 1em;
+  margin-bottom: 1em;
+  color: white; }
+  .main-heading--gray {
+    background-color: #999999; }
+  @media (min-width: 800px) {
+    .main-heading {
+      width: 20em; } }
+
 .projects-main-wrap {
   padding: 2em 4em;
   font-family: "Trebuchet MS", Helvetica, sans-serif; }
@@ -166,22 +228,24 @@ a {
 .project-card-wrap {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding-top: 2em;
+  border-top: 1px solid #999999; }
 
 .project-card {
   align-self: flex-start;
   min-width: 100%;
   margin-bottom: 1em;
-  border: 3px solid #031424;
+  border: 1px solid #031424;
   border-radius: 3px; }
   .project-card:hover {
     box-shadow: 0px 5px 5px 5px #dadada; }
   .project-card h3 {
-    background: #CF6766;
+    background: #30415D;
     margin: 0;
     padding: 1em;
     color: white;
-    border-bottom: 2px solid #031424; }
+    border-bottom: 1px solid #031424; }
   .project-card h4 {
     margin-bottom: 0; }
   .project-card p {
@@ -189,10 +253,10 @@ a {
   @media (min-width: 915px) {
     .project-card {
       min-width: unset;
-      width: 45%; } }
+      width: 48%; } }
   @media (min-width: 1100px) {
     .project-card {
-      width: 29%; } }
+      width: 32%; } }
 
 .project-card-body {
   padding: 1em; }
@@ -215,6 +279,8 @@ a {
     width: 120px;
     margin: 1em;
     cursor: pointer; }
+    .project-button-wrap button:hover {
+      background: #30415D; }
     @media (min-width: 450px) {
       .project-button-wrap button {
         width: 150px; } }
@@ -228,6 +294,21 @@ a {
 a {
   text-decoration: inherit;
   color: inherit; }
+
+.main-heading {
+  text-align: center;
+  background-color: #CF6766;
+  width: 10em;
+  margin: auto;
+  border-radius: 3px;
+  padding: .5em 1em;
+  margin-bottom: 1em;
+  color: white; }
+  .main-heading--gray {
+    background-color: #999999; }
+  @media (min-width: 800px) {
+    .main-heading {
+      width: 20em; } }
 
 .about-me-section {
   margin: 1em 5em;
@@ -270,6 +351,16 @@ a {
     .about-me-info {
       text-align: left;
       width: 40%; } }
+
+.about-me-codesignal {
+  color: #30415D;
+  text-decoration: underline; }
+  .about-me-codesignal:hover {
+    color: #8EAEBD; }
+  @media (min-width: 1000px) {
+    .about-me-codesignal {
+      text-align: right;
+      padding-right: 2em; } }
 
 .about-me-skillset {
   padding: 0 3em;
@@ -316,4 +407,9 @@ a {
   overflow: hidden; }
   .cert-modal img {
     width: 75%; }
+
+.about-me-paragraph-border-bottom {
+  margin-bottom: 0;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #8EAEBD; }
 

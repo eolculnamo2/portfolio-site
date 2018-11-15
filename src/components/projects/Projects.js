@@ -52,7 +52,7 @@ class Projects extends React.Component {
                     github_link: "https://github.com/eolculnamo2/portfolio-site",
                     view_project_link: "https://github.com/eolculnamo2/portfolio-site",
                     image_link: "https://preview.ibb.co/m2nNJV/Screen-Shot-2018-11-12-at-12-38-48-AM.png",
-                    description: "This website.",
+                    description: "This website is a SPA built with server side rendering.",
                     stack: "Server Side Rendering, React, SCSS, NodeJS/Express"
                 }
             ],
@@ -64,7 +64,7 @@ class Projects extends React.Component {
     render() {
         return (
             <div className="projects-main-wrap">
-                <h1 className="projects-title">Personal Projects</h1>
+                <h1 className="main-heading main-heading--gray">{"< Personal Projects />"}</h1>
                 <div className="project-card-wrap">
                     {this.state.fullStackProjects.map((x,i) => {
                         return <ProjectCard key={"project-card"+i} project={x}/>

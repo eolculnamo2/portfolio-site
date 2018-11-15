@@ -60,21 +60,22 @@ class AboutMe extends React.Component {
                         <li>MongoDB</li>
                     </ul>
                 </div>
+                <h4 className="about-me-codesignal"><a target="_blank" href="https://app.codesignal.com/profile/rob_b17">CodeSignal Coding Score: 764 (Top 5%)</a></h4>
                 <p>
                     I am front end developer with a passion for JavaScript front end frameworks such as VueJS and React.
                     I enjoy creating SPA applications most and enjoy providing the very best user experience possible. As 
                     a front end developer, it is important to me to have expert proficiency with HTML, CSS, and JavaScript.
                 </p>
                 <p>
-                    I believe that scalability and extendability is where code becomes an art. When another developer comes to
+                    I believe that scalability and extendability is where code becomes an art. When another developer comes to an
                     application that I've built, I always hope they find my code neatly abstracted and easy to edit.
                 </p>
                 <p>
-                    Keeping my skills sharp is a priority for me. I spend two to three hours per night practicing in one from
+                    Keeping my skills sharp is a priority for me. I spend two to three hours per night practicing in one form
                     or another. While I lack years in terms of professional experience, I consistently work toward developing at 
                     a senior developer level.
                 </p>
-                <p>
+                <p className="about-me-paragraph-border-bottom">
                     The most fun part of my job is being part of a team. Nothing beats the chance to be on a team where everyone 
                     has respectable strengths and original ideas. I do my very best to learn what I am able from my teammates and
                     am eager to share things I've picked up that I believe are useful.

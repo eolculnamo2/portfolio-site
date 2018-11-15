@@ -50,6 +50,19 @@
     }
 }
 
+.about-me-codesignal {
+    color: $medium-blue;
+    text-decoration: underline;
+
+    &:hover {
+        color: $light-blue;
+    }
+    @media (min-width: 1000px) {
+        text-align: right;
+        padding-right: 2em;
+    }
+}
+
 .about-me-skillset {
     padding:  0 3em;
     text-align: center;
@@ -106,4 +119,10 @@
     img {
         width: 75%;
     }
+}
+
+.about-me-paragraph-border-bottom {
+    margin-bottom: 0;
+    padding-bottom: 1em;
+    border-bottom: 1px solid $light-blue;
 }
