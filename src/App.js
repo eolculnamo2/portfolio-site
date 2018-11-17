@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Link, Route, withRouter, Redirect, Switch } fr
 import Home from './components/homepage/Home';
 import Header from './components/header/Header';
 import Articles from './components/articles/Articles';
+import Article from './components/articles/article/Article'
 import Projects from './components/projects/Projects';
 import AboutMe from './components/about-me/AboutMe';
 
@@ -18,6 +19,10 @@ class App extends React.Component {
                     <Route exact path='/articles' component={Articles}/>
                     <Route exact path='/projects' component={Projects}/>
                     <Route exact path='/about-me' component={AboutMe}/>
+                    <Route exact path='/vue-basics' component={Article}/>
+                    <Route exact path='/article/:article' render={ props => (
+                            <Article/>
+                        )} />
                     {/*TODO: Add 404 Page */}
                 </Switch>
             </div>

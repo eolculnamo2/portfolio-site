@@ -18,3 +18,48 @@
         text-decoration: underline;
     }
 }
+
+.article-outer {
+    background: #dadada;
+    margin: 0; padding: 0;
+}
+
+.article-main-wrap {
+    font-family: $font1;
+    margin: 0 2em;
+    background: white;
+    padding: 1em;
+    @media (min-width: 1000px) {
+        margin: 0 10em
+    }
+}
+
+.article-code-block {
+    background-color: $code-bg;
+    padding: .3em 2em;
+    border-radius: 3px;
+    display: inline-block;
+    line-height: 1.5;
+    letter-spacing: .8px;
+    .indent-1 {
+        margin-left: 2em;
+    }
+    .indent-2 {
+        margin-left: 4em;
+    }
+    .indent-3 {
+        margin-left: 6em;
+    }
+    .indent-4 {
+        margin-left: 8em;
+    }
+}
+
+.article-title-wrap {
+    border-bottom: 1px solid $light-blue;
+}
+.article-vue {
+    width: 50%;
+    margin: auto;
+    display: block;
+}

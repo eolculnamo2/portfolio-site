@@ -9,7 +9,8 @@ class Articles extends React.Component {
             featuredArticles: [
                 {
                     title: "Getting Started with VueJS",
-                    preview: "Developers love VueJS. Click here to read how simple it is to get started and find out why this framework is so hyped."
+                    preview: "Developers love VueJS. Click here to read how simple it is to get started and find out why this framework is so hyped.",
+                    link: "/vue-basics"
                 },
                 {
                     title: "Lessons from Working with Sentry",
@@ -30,7 +31,7 @@ class Articles extends React.Component {
                 <div className="article-preview-wrap">
                     {this.state.featuredArticles.map((x,i) => {
                         return( 
-                            <ArticlePreview title={x.title} text={x.preview} />
+                            <ArticlePreview title={x.title} text={x.preview} link={x ? x.link : '/'} />
                         )
                     })}
                 </div>
