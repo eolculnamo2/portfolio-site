@@ -22,7 +22,7 @@ const VueBasics = () => {
     
     <h3>The Vue Instance</h3>
 
-    <p>Throughout this section, I encourage you to use this pen as a reference to get you started. It has examples of all three of the topics we discuss: Data, Methods, and Computed values. By the end of this section, you should be familiar with how to use these three features. I encourage you to fork the pen and start practiciing/getting used to the features that Vue offers. When looking at this example, pay close attention to how the variables/functions on the HTML page interact with the values on the JS page.</p>
+    <p>Throughout this section, I encourage you to use this pen as a reference to get you started. It has examples of all three of the topics we discuss: Data, Methods, and Computed values. By the end of this section, you should be familiar with how to use these three features. I encourage you to fork the pen and start practicing/getting used to the features that Vue offers. When looking at this example, pay close attention to how the variables/functions on the HTML page interact with the values on the JS page.</p>
 
     <iframe height='265' scrolling='no' title='VueJS Basics' src='//codepen.io/eolculnamo2/embed/ZmJMPo/?height=265&theme-id=dark&default-tab=js,result' frameBorder='no' allowTransparency='true' allowFullScreen='true' style={{width: "100%;"}}>See the Pen <a href='https://codepen.io/eolculnamo2/pen/ZmJMPo/'>VueJS Basics</a> by Rob (<a href='https://codepen.io/eolculnamo2'>@eolculnamo2</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
     <p>
@@ -44,7 +44,7 @@ const VueBasics = () => {
 
     <p>
         Congratulations, you just instantiated Vue on your application. At this point Vue has no functionality. Next, I will show you how to do three important things in Vue with the instance. They are called data, methods, and computed. 
-        First is data. In Vue, you have a reactive data object that where we store our information. For now, just know that reactive means that when the data is updated, the user will see the updated data on the page. When we get to methods and computed, you will see this reactive data update your page. For now, you just need to know how to put the data on the page and Vue makes this very easy.
+        First is data. In Vue, you have a reactive data object where we store our information. For now, just know that reactive means that when the data is updated, the user will see the updated data on the page. When we get to methods and computed, you will see this reactive data update your page. For now, you just need to know how to put the data on the page and Vue makes this very easy.
     </p>
 
     <em>Data</em>
@@ -191,7 +191,7 @@ const VueBasics = () => {
         <div>{'new Vue({'}</div>
                 <div className="indent-1">el: “#app”,</div>
         <div className="indent-1">{'data: {'}</div>
-            <div className="indent-2">n1: 3</div>
+            <div className="indent-2">n1: 3,</div>
             <div className="indent-2">n2: 5</div>
         <div className="indent-1">},</div>
         <div className="indent-1">{'computed {'}</div>
