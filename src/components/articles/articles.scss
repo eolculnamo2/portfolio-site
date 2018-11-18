@@ -29,6 +29,7 @@
     margin: 0 2em;
     background: white;
     padding: 1em;
+    min-height: 100vh;
 
     @media (min-width: 1000px) {
         margin: 0 10em
@@ -80,4 +81,9 @@
     @media (min-width: 600px) {
         width: 20%;
     }
+}
+
+.article-not-found {
+    text-align: center;
+    margin: 5em;
 }

@@ -3,6 +3,7 @@ const app = express();
 import React from 'react';
 import {renderToString} from 'react-dom/server';
 import { StaticRouter } from "react-router-dom";
+import {Helmet} from "react-helmet";
 import App from './src/App.js'
 
 app.use(express.static('assets/dist'));
@@ -15,6 +16,7 @@ app.get('*', (req,res) => {
     <StaticRouter context = {context} location={req.url}>
     <App />
     </StaticRouter>)
+    const helmet = Helmet.renderStatic();
     let htmlString = `
     <!DOCTYPE html>
     <html lang="en">
@@ -23,7 +25,9 @@ app.get('*', (req,res) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="/style.css">
-        <title>Rob Bertram Web Developer</title>
+            ${helmet.title.toString()}
+            ${helmet.meta.toString()}
+            ${helmet.link.toString()}
     </head>
     <body>
         <div id="app">

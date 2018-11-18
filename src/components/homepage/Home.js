@@ -13,11 +13,12 @@ class Home extends React.Component {
                 {
                     title: "Getting Started with VueJS",
                     preview: "Developers love VueJS. Click here to read how simple it is to get started and find out why this framework is so hyped.",
-                    link: "/vue-basics"
+                    link: "/article/vue-basics"
                 },
                 {
-                    title: "Lessons from Working with Sentry",
-                    preview: "Troubleshooting console errors that you are unable to replicate seems insurmountable. Click here to read my personal tips to help get you started."
+                    title: "Building Scalable Projects with Front End JavaScript Frameworks",
+                    preview: "Click here for tips on making your SPA application scalable in order to reap the benefits of consistency and ease of management.",
+                    link: "/article/scalable-frontend-javascript-frameworks"
                 },
                 {
                     title: "Webpack's SplitChunksPlugin: Basic Setup",

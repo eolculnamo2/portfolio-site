@@ -1,13 +1,15 @@
 import React from 'react';
+import {Helmet} from "react-helmet";
 import '../../articles.scss';
 
 const VueBasics = () => {
     return (
 <div>
-    <head>
-        <meta keywords="Vue VueJS Getting started with Vue VueJS for Beginners Vue Basics"></meta>
-        <meta description="A no non-sense guide to getting start with VueJS right away."></meta>
-    </head>
+    <Helmet>
+        <meta name="keywords" content="Vue VueJS Getting started with Vue VueJS for Beginners Vue Basics"></meta>
+        <meta name="description" content="A no non-sense guide to getting start with VueJS right away."></meta>
+        <title>VueJS Basics: The Vue Instance and The Basics of Components</title>
+    </Helmet>
     <div className="article-title-wrap">
         <h1>VueJS Basics: The Vue Instance and The Basics of Components</h1>
         <h4>Rob Bertram</h4>
