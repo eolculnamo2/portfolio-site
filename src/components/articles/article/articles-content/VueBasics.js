@@ -208,14 +208,14 @@ const VueBasics = () => {
 
     <h3>Vue Components</h3>
     
-    <p>The Vue Instance is a great place to start learn VueJS. However, its use in most projects is to define some global variables and functions and to facilitate the link between HTML and Vue Components. Before we go any further, it is important for you to know that moving from learning with the Vue Instance to working with Vue Components is not that hard. Vue components share many of the same options as the Vue Instance. For the sake of this section, we will again use data, methods, and computed values except in the Vue Component rather than the Vue Instance.  I’ve also broken down the process of bringing using Vue Components into simple steps.</p>
+    <p>The Vue Instance is a great place to start learning VueJS. However, its use in most projects is to define 1) global variables and functions and 2) to facilitate the link between HTML and Vue Components. Before we go any further, it is important for you to know that moving from learning with the Vue Instance to working with Vue Components is not that hard. Vue components share many of the same options as the Vue Instance. For the sake of this section, we will again use data, methods, and computed values except in the Vue Component rather than the Vue Instance.  I’ve also broken down the process of using Vue Components into simple steps.</p>
     
-    <p>Before we get started, go ahead and open this codesandbox project. It was created with the default Vue CLI project with small modifications to make it more relevant to this article. Most of the work in this is from the original CLI. Use this as a reference to make your learning easier. When you're ready, for this project and start building your own Vue App with Vue Components. Go ahead and click the hamburger menu in the upper left hand corner of the iframe below to view the file system. The important files to us are index.html, main.js, and App.vue. Also pay attention the HelloWorld component and how it is called/used in App.js</p>
+    <p>Before we get started, go ahead and open this codesandbox project. It was created with the default Vue CLI project with small modifications to make it more relevant to this article. Most of the work in this is from the original CLI. Use this as a reference to make your learning easier. When you're ready, fork this project and start building your own Vue App with Vue Components. Go ahead and click the hamburger menu in the upper left hand corner of the iframe below to view the file system. The important files to us are index.html, main.js, and App.vue. Also pay attention to the HelloWorld component and how it is called/used in App.vue</p>
     <iframe src="https://codesandbox.io/embed/50njmzy69p" style={{width: '100%;'}} sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
     <br/><br/><em>Step 1 Setting up the Vue Instance</em><br/>
 
-    <p>Like before, we will start with an empty div and the Vue Instance. Vue Components cannot get to the DOM without the Vue Instance first. Notice in the example below that our instance now uses components and render. We will get to these soon, but for now just know that we will list the components we want to use in the components object and the render function will choose the component we want to render. Generally in the Vue Instance, there will be one component in components and it will be the components to be rendered in the render function. In this case, we will use the component App which we have not built yet.</p>
+    <p>Like before, we will start with an empty div and the Vue Instance. Vue Components cannot get to the DOM without the Vue Instance first. Notice in the example below that our instance now uses components and render. We will get to these soon, but for now just know that we will list the components we want to use in the components object and the render function will choose the component we want to render. Generally in the Vue Instance, there will be one component in components and it will be the component to be rendered in the render function. In this case, we will use the component App which we have not built yet.</p>
 
     <div className="article-code-block">
         <em>index.html</em><br/>
@@ -237,7 +237,7 @@ const VueBasics = () => {
     </div>
 
     <br/><br/><em>Step 2 Building the App Component</em><br/>
-    <p>Next we will construct the component in a .vue file. Vue files make front end development simple. They bring together HTML, JS, and CSS. For our App component, we will simply have template tags for our HTML, script tags for our JavaScript, and style tags for our CSS. A few important things to notice. 1) we have to include the name of the component in the script tags, 2) the data property returns an object whereas the instance does not (it won’t work without it in the component), and 3) we wrap the template in div tags to prevent the component from breaking.</p>
+    <p>Next we will construct the component in a .vue file. Vue files make front end development simple. They bring together HTML, JS, and CSS. For our App component, we will simply have template tags for our HTML, script tags for our JavaScript, and style tags for our CSS. A few important things to notice: 1) we have to include the name of the component in the script tags, 2) the data property returns an object whereas the instance does not (it won’t work without it in the component), and 3) we wrap the contents of template in div tags to prevent the component from breaking.</p>
 
     <div className="article-code-block">
         <em>App.vue</em><br/>
@@ -247,10 +247,12 @@ const VueBasics = () => {
         <div className="indent-1">&lt;/div&gt;</div>
         <div>&lt;/template&gt;</div>
         <div>&lt;script&gt;</div>
-        <div className="indent-1">//This is where you can import other components and dependencies. See App.vue in codesandbox for example.</div>
+        <div className="indent-1">//This is where you can import other components and dependencies. See App.vue in codesandbox for an example.</div>
         <div className="indent-1">{'export default {'}</div>
-            <div className="indent-2">{'data: function(){'}</div>
-                <div className="indent-3">msg: "Hello Vue"</div>
+            <div className="indent-2">{'data: function() {'}</div>
+                <div className="indent-3">{'return {'}</div>
+                <div className="indent-4">msg: "Hello Vue"</div>
+                <div className="indent-3">{'}'}</div>
             <div className="indent-2">{'},'}</div>
             <div className="indent-2">{'methods:{'}</div>
                 <div className="indent-3">//This is where methods go just like on the Vue Instance</div>
@@ -263,7 +265,7 @@ const VueBasics = () => {
         <div>&lt;style&gt;</div>
         <div className="indent-1">{'.msg-wrap {'}</div>
             <div className="indent-2">color: red;</div>
-        <div className="indent-1">{'.}'}</div>
+        <div className="indent-1">{'}'}</div>
         <div>&lt;/style&gt;</div>
     </div>
 
