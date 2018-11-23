@@ -216,6 +216,8 @@ a {
     cursor: pointer; }
     .article-main-wrap a:hover {
       text-decoration: underline; }
+  .article-main-wrap h2, .article-main-wrap h3 {
+    color: #30415D; }
   .article-main-wrap iframe {
     width: 100%;
     height: 500px; }

@@ -12,7 +12,6 @@ const ScalableJavaScript = () => {
             <div className="article-title-wrap">
                 <h1>Building Scalable Projects with Front End JavaScript Frameworks</h1>
                 <h4>Rob Bertram</h4>
-                <em>Article Not Complete</em>
             </div>
             <p>Front end web development is dramatically different than it used to be thanks to front end frameworks. A part of becoming proficient as a front end developer is learning to skillfully construct a file system that is maintainable and scalable. For anyone who has worked with a large and complicated front end code base, you’ll be able to relate to the feeling of having to do things over and over again, finding excessive amounts of copied and pasted code, and different functions in different places which ultimately do the same thing. This article offers strategies to help avoid this kind of code structure on the front end.</p>
             <img className="article-scalable" src="https://images.pexels.com/photos/249798/pexels-photo-249798.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
