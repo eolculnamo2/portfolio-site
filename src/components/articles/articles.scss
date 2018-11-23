@@ -83,6 +83,22 @@
     }
 }
 
+.article-block {
+    display: block;
+}
+
+.article-scalable {
+    width: 90%;
+    margin: auto;
+    display: block;
+    border: 2px solid #dadada;
+    border-radius: 3px;
+
+    @media (min-width: 600px) {
+        width: 60%;
+    }
+}
+
 .article-not-found {
     text-align: center;
     margin: 5em;
