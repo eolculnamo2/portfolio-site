@@ -16,7 +16,7 @@ const ScalableJavaScript = () => {
             <p>Front end web development is dramatically different than it used to be thanks to front end frameworks. A part of becoming proficient as a front end developer is learning to skillfully construct a file system that is maintainable and scalable. For anyone who has worked with a large and complicated front end code base, you’ll be able to relate to the feeling of having to do things over and over again, finding excessive amounts of copied and pasted code, and different functions in different places which ultimately do the same thing. This article offers strategies to help avoid this kind of code structure on the front end.</p>
             <img className="article-scalable" src="https://images.pexels.com/photos/249798/pexels-photo-249798.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
             
-            <em className="article-block">What is abstraction?</em>
+            <h2>What is abstraction?</h2>
             <p>This article is really about scalability through abstraction. Abstraction is simple enough to understand. It means representing complex things in simple terms in our code base. In practical terms, this means moving the messy and detailed parts of our functions into a shared file where they can be defined and reused. This task can be difficult because it involves organizing code before it is fully written. However, it is incredibly important as your project becomes larger because it makes large complicated code manageable and scalable.</p>
             <p>Here are a few strategies to help with abstraction.</p>
 
