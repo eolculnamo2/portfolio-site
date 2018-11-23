@@ -49,12 +49,16 @@ const ScalableJavaScript = () => {
             </span>
 
             <p>The implementation of how you want to store the configurable props is up to you. In the past, I’ve created a configuration file which exports arrays of objects which are passed to props so that the component can iterate through them.</p>
+            
+            <em className="article-block">Example of Configurable Components</em><br/>
+            <iframe src="https://codesandbox.io/embed/4lqr7lmk30" style={{width: '100%;'}} sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+            
             <p>There are several benefits to this approach.</p>
             <p>One benefit is that the UI within similar components is meant to be similar and that if something needs changed, it is likely that it will need to be changed for all components. With this approach, you only need to change the code in one place rather than trying to track down all the variations of the component that needs to change.</p>
             <p>Another benefit is that it allows development of future UI to move from creating all aspects of a new component to simply updating a configuration. If you do this with a configuration JS file, it becomes as simple as updating an array of objects rather than the many details that come with developing a new component.</p>
             <p>It is obvious that this approach can get messy fast within the component itself. There are definitely situations where this is not the best idea. If a component requires too many configurations, it is usually for the best that a separate component is made rather than trying to force a single component to hold too many possible options for its presentation and logic. On the flip side, if you make a component that has some mess but such that it is bearable, it might still be justified if the majority of the development can be freed to operate within the configurations passed to the component rather than the component itself.</p>
 
-            <h3>3) Mixins</h3>
+            <h3>3) Try Mixins</h3>
             <p>A third way to abstract your code is to use mixins. A mixin is seamlessly integrated into your component such that data, state, functions, etc. from the mixin all become readily available in your component. For example, you may have 5 components that all share the need for the same 3 functions and 10 variables. You could create a mixin that contained these common functions and variables and pass the mixin to the 5 components. In doing so, you’ve created a situation where you only need to write the shared logic and functions once rather than 5 separate times.</p>
             <p>As with everything discussed on in this article, mixins should be used with caution. An <a href="https://reactjs.org/blog/2016/07/13/mixins-considered-harmful.html">excellent article</a> was written by a member of the Facebook React team. In this article, he speaks to several scenarios in which mixins have been a detriment to teams using them. The three main reasons are 1) that they introduce implicit dependencies, 2) they create name clashes, and 3) they create snowballing complexity.</p>
             <p>Essentially, he points out that if you create too many mixins, everything becomes complex and unreadable. Your code becomes nearly impossible for new team members to make sense of and everyone is afraid to delete or rename anything because they have a hard time mapping all the different places where variables and functions are used.</p>
