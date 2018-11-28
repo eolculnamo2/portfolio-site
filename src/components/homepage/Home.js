@@ -19,11 +19,12 @@ class Home extends React.Component {
                     title: "Building Scalable Projects with Front End JavaScript Frameworks",
                     preview: "Click here for tips on making your SPA application scalable in order to reap the benefits of consistency and ease of management.",
                     link: "/article/scalable-frontend-javascript-frameworks"
-                },
-                {
-                    title: "Webpack's SplitChunksPlugin: Basic Setup",
-                    preview: "Webpack's splitChunksPlugin does wonders for your JavaScript's performance. The best part is that setting up splitChunksPlugin is not at all difficult. Click here for a quick guide on getting started."
                 }
+                // ,
+                // {
+                //     title: "Webpack's SplitChunksPlugin: Basic Setup",
+                //     preview: "Webpack's splitChunksPlugin does wonders for your JavaScript's performance. The best part is that setting up splitChunksPlugin is not at all difficult. Click here for a quick guide on getting started."
+                // }
             ]
         }
         this.loopSkills();
