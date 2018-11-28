@@ -210,7 +210,8 @@ a {
   min-height: 100vh; }
   @media (min-width: 1000px) {
     .article-main-wrap {
-      margin: 0 10em; } }
+      margin: 0 10em;
+      padding: 1em 4em; } }
   .article-main-wrap a {
     color: #CF6766;
     cursor: pointer; }
