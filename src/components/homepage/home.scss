@@ -61,8 +61,11 @@
     padding: 1em;
     border-radius: 3px;
     &:hover {
+        h3 {
+            color: white;
+        }
         background: $light-blue;
-        color: white;
+        color: white !important;
         cursor: pointer;
     }
 }

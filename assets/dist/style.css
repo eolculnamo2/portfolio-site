@@ -76,8 +76,10 @@ a {
   border-radius: 3px; }
   .article-preview-section:hover {
     background: #8EAEBD;
-    color: white;
+    color: white !important;
     cursor: pointer; }
+    .article-preview-section:hover h3 {
+      color: white; }
 
 .article-preview-h3 {
   margin: 0;
